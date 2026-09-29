@@ -32,7 +32,7 @@ export default function ToolsMarquee() {
             <img
               src={logoMap[tool.id]}
               alt={tool.label}
-              className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity duration-100"
+              className="h-6 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
             />
             <span className="text-muted text-sm font-sans whitespace-nowrap">
               {tool.label}

@@ -10,6 +10,7 @@ export const projects = [
     videoUrl: 'https://pub-787198a5b1534ba99a36c72f4e19fdc3.r2.dev/Claude%20Frontend%20Skills.mp4',
     thumbnail: '/videos/video1-thumbnail.png',
     description: 'Breve descripción del proyecto.',
+    instagramUrl: 'https://www.instagram.com/p/DY9nXRSkTXn/',
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const projects = [
     videoUrl: 'https://pub-787198a5b1534ba99a36c72f4e19fdc3.r2.dev/Migrar%20Chatgpt%20A%20Claude.mp4',
     thumbnail: '/videos/video2-thumbnail.png',
     description: 'Otra descripción breve.',
+    instagramUrl: 'https://www.instagram.com/p/DUZLxENAtGW/',
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ export const projects = [
     videoUrl: 'https://pub-787198a5b1534ba99a36c72f4e19fdc3.r2.dev/Prediccionmundialia%20%5BTerminado%5D.mp4',
     thumbnail: '/videos/video3-thumbnail.png',
     description: 'Otra descripción breve.',
+    instagramUrl: 'https://www.instagram.com/p/DZskk__gWUP/',
   },
    {
     id: 4,
@@ -46,6 +49,7 @@ export const projects = [
     videoUrl: 'https://pub-787198a5b1534ba99a36c72f4e19fdc3.r2.dev/Trailer%2BLinea%20De%20Tiempo%201.mp4',
     thumbnail: '/videos/video4-thumbnail.png',
     description: 'Otra descripción breve.',
+    instagramUrl: 'https://www.instagram.com/p/Dc1_2DxO5Kk/',
   },
   {
     id: 5,
@@ -58,6 +62,8 @@ export const projects = [
     videoUrl: 'https://pub-787198a5b1534ba99a36c72f4e19fdc3.r2.dev/Video%204.mp4',
     thumbnail: '/videos/video5-thumbnail.png',
     description: 'Otra descripción breve.',
+    instagramUrl: 'https://www.instagram.com/p/C3YBt1fuEeq/',
+    
   },
    {
     id: 6,
@@ -70,5 +76,6 @@ export const projects = [
     videoUrl: 'https://pub-787198a5b1534ba99a36c72f4e19fdc3.r2.dev/Video%206.mp4',
     thumbnail: '/videos/video6-thumbnail.png',
     description: 'Otra descripción breve.',
+    instagramUrl: 'https://www.instagram.com/p/C3RNX53OGBA/',
   },
 ]

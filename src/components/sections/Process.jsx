@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion'
 import { MessageCircle, Layers, Sparkles, Check } from 'lucide-react'
 import { processSteps, processStats } from '../../data/process'
+import { useLanguage } from '../../context/LanguageContext'
 
 const icons = [MessageCircle, Layers, Sparkles, Check]
 
 export default function Process() {
+  const { t } = useLanguage()
   return (
     <section className="relative py-24 px-6 md:px-12 max-w-6xl mx-auto">
       {/* Kicker */}
@@ -17,7 +19,7 @@ export default function Process() {
       >
         <span className="w-8 h-px bg-accent" />
         <span className="text-muted font-sans text-xs tracking-widest uppercase">
-          02 / Cómo trabajo
+          {t.process.kicker}
         </span>
       </motion.div>
 
@@ -30,8 +32,8 @@ export default function Process() {
           transition={{ duration: 0.6 }}
           className="font-display text-ink text-4xl md:text-5xl leading-[1.1] max-w-lg"
         >
-          Edición con criterio,{' '}
-          <span className="text-accent">sin vueltas innecesarias</span>
+          {t.process.headline}{' '}
+          <span className="text-accent">{t.process.headlineAccent}</span>
         </motion.h2>
 
         {/* Stats */}

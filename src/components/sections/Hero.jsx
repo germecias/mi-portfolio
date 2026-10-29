@@ -2,9 +2,11 @@ import { motion } from 'framer-motion'
 import { useTimecode } from '../../hooks/useTimecode'
 import SocialLinks from '../ui/SocialLinks'
 import heroIcon from '../../assets/hero-icon.png'
+import { useLanguage } from '../../context/LanguageContext'
 
 export default function Hero() {
   const timecode = useTimecode()
+  const { t } = useLanguage()
 
   return (
     <section className="relative min-h-screen bg-bg overflow-hidden flex items-center">
@@ -15,13 +17,14 @@ export default function Hero() {
         <div className="flex-1 w-full">
 
           {/* Rol / kicker */}
+          
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.1, duration: 0.6 }}
             className="text-muted font-sans text-sm tracking-wide mb-4"
           >
-            Editor, productor y realizador audiovisual
+            {t.hero.role}
           </motion.p>
 
           {/* Título con wipe reveal */}
@@ -32,7 +35,7 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
               className="font-display text-ink text-5xl md:text-7xl leading-[1.05]"
             >
-              Meciás German
+              Siena Studios
             </motion.h1>
 
             {/* Barra de corte / wipe */}
@@ -52,7 +55,7 @@ export default function Hero() {
             transition={{ delay: 1.3, duration: 0.6 }}
             className="text-muted font-sans text-base md:text-lg mt-6 max-w-md"
           >
-            Narrativa visual, ritmo y color para marcas y creadores.
+            {t.hero.tagline}
           </motion.p>
 
           <SocialLinks delay={1.5} />
@@ -68,7 +71,7 @@ export default function Hero() {
               href="#reels"
               className="inline-flex items-center gap-2 border border-accent text-accent font-sans text-sm tracking-wide px-6 py-3 hover:bg-accent hover:text-bg transition-colors duration-300"
             >
-              Ver trabajos
+              {t.hero.cta}
             </a>
           </motion.div>
 

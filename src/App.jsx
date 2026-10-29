@@ -5,7 +5,7 @@ import ProjectsGrid from './components/sections/ProjectsGrid'
 import ProjectModal from './components/ui/ProjectModal'
 import ToolsMarquee from './components/sections/ToolsMarquee'
 import Process from './components/sections/Process'
-
+import PhotoGallery from './components/sections/PhotoGallery'
 function App() {
   const [selectedProject, setSelectedProject] = useState(null)
 
@@ -16,6 +16,7 @@ function App() {
       <ToolsMarquee />
       <Process />
       <ProjectsGrid sectionId="reels" onOpenProject={setSelectedProject} />
+      <PhotoGallery />
       <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </main>
   )
